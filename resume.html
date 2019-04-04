@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+	    <meta charset = "utf-8">
+	    <meta name = "viewport" content = "width=device-width , initial-scale=1">
+        <meta http-equiv = "X-UA-compatible" content="IE=edge">
+	    <title> KANAGAVARSHINI'S PORTFOLIO </title>
+	      
+	    <link rel= "stylesheet" type= "text/css" href= "resume.css">
+	    
+       
+    </head>
+    <body>
+    	<div id="main-page">
+    		<section class="app">
+    			<button  class="hamburger-container" onclick = "hamOpen()" >
+		                <div class="hamburger-bar"></div>
+		                <div class="hamburger-bar"></div>
+		                <div class="hamburger-bar"></div>
+                </button>
+			  	<nav class =" navbar">
+			  		<ul class="nav-web-bar">
+			  			<li>
+				  			<a href="index.html"  aria-current="page">HOME</a>
+				  		</li>
+				  		<li>
+				  			<a href="about.html" >ABOUT</a>
+				  		</li>
+				  		<li>
+				  			<a href="projects.html" >PROJECTS</a>
+				  		</li>
+				  		<li>
+				  			<a href="resume.html">RESUME</a>
+				  		</li>
+			  			
+		  				<li>
+		  					<a href="https://github.com/kanagavarshini" target="_blank" >GITHUB</a>
+		  				</li>
+		  			
+		  			    <li>
+		  					<a href="https://www.linkedin.com/in/kanagavarshini/" target="_blank" >LINKEDIN</a>
+		  				</li>
+		  			
+			  		</ul>
+			  		
+			  	
+				  	<section class="slide-right"></section>
+				  	<div class="ham-container">
+					  	<ul class="ham-menu">
+					  		<button class="ham-close" onClick = "hamClose()" >X</button>
+					  		<section class="ham-title">
+					  			<h1>KANAGAVARSHINI</h1>
+					  			<p class="ham-subtitle">				  				
+					  				"FRONT-END WEB DEVELOPER"
+					  			</p>
+					  		</section>
+					  		<li>
+					  			<a href="index.html"  aria-current="page">HOME</a>
+					  		</li>
+					  		<li>
+					  			<a href="about.html" >ABOUT</a>
+					  		</li>
+					  		<li>
+					  			<a href="projects.html" >PROJECTS</a>
+					  		</li>
+					  		<li>
+					  			<a href="resume.html" >RESUME</a>
+					  		</li>
+					  		<li>
+		  						<a href="https://github.com/kanagavarshini" target="_blank" >GITHUB</a>
+		  				    </li>
+					  		<li>
+					  			<a href="https://www.linkedin.com/in/kanagavarshini/" target="_blank" >LINKEDIN</a>
+					  		</li>
+					  	</ul>
+					</div>  	
+			    </nav>
+			    <div class="resume">
+			    	<button class="resume-pdf">
+				    	<a href="https://drive.google.com/uc?export=download&id=1--oQmF762jfvsvDULtUArUH5kShF6KVq" >DOWNLOAD PDF &#10515;				  			
+						</a>
+					</button>
+					<iframe src="https://docs.google.com/document/d/e/2PACX-1vS8Vj5qXb17s8OCXjTbIwX-gS7HJoyN5sUQnYbLA0q-KnPu64yuhEiwqKKg-fhM_KsH8lKt8CLY6mjg/pub?embedded=true" allowfullscreen="index"></iframe>
+				</div>
+				<script>
+			    	hamOpen = () =>{
+						document.querySelector('.ham-menu').style.display="block";				
+						
+						document.querySelector('.footer').style.marginLeft="25%";
+					}	
+					hamClose = () =>{
+						document.querySelector('.ham-menu').style.display="none";
+						
+						document.querySelector('.footer').style.marginLeft="0%";
+					}
+				</script>
+				<div class="footer">
+			    	<div class="footer-copyright">@2018-KANAGAVARSHINI. ALL RIGHTS RESERVED.</div>		              
+		        </div>
+		    </section>
+		</div>
+	</body>
+</html>
