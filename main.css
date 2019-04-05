@@ -122,9 +122,11 @@ div.slide-left span {
 	margin: 0 auto 1rem;
 }
 .home-header,.home-header1{
+	
 	font-size: 4rem;
 	font-weight: 700;
 }
+
 .scrollers{
 	margin-top: 1em;
 	font-size: 1.8em;
@@ -154,7 +156,7 @@ div.slide-left span {
 	font-size: 1rem;
 	font-style: italic;
 }
-@media screen and (min-width: 350px) and (max-width: 750px){
+@media screen and (min-width: 650px) and (max-width: 750px){
 	.ham-menu{
 		
 		flex-direction: column;
@@ -179,7 +181,14 @@ div.slide-left span {
 		font-size: 2em;
 	
     }
+    .home-header{
+    	font-size: 3rem;
+    }
+    .home-header1{
+    	font-size: 2.5rem;
+    }
 	.home-slide-right{
+
 		height: 50vh;
 	}
 	.hamburger-container{
@@ -194,7 +203,7 @@ div.slide-left span {
 		margin-bottom: 1.5em;
 		line-height: 2em;
 	}
-	h1{
+	.ham-title>h1{
 		color:white;
 		font-size: 1.5em;
 		margin:0;
@@ -232,10 +241,95 @@ div.slide-left span {
 	.nav-web-bar{
 		display: none;
 	}
+	
 
 }
-@media screen and (min-width: 750px){
-	.ham-container{
-	display:none;
-}
+@media screen and (min-width: 350px) and (max-width: 650px){
+	.ham-menu{
+		
+		flex-direction: column;
+		background-color: gray;
+		height: 100vh;
+		max-width: 50%;
+		position:absolute;
+		padding:0;
+		left: 0;
+		margin:0;
+		list-style: none;
+		z-index:1000;
+	}
+	.ham-close{
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		color: white;
+		background: transparent;
+		border:none;
+		font-size: 1.5em;
+	
+    }
+    .home-header{
+    	font-size: 3rem;
+    }
+    .home-header1{
+    	font-size: 2.5rem;
+    }
+	.home-slide-right{
+
+		height: 50vh;
+	}
+	
+	.hamburger-container{
+		display: block;
+	}
+	.ham-title{
+		
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 4.5rem;
+		margin-bottom: 1.5em;
+		line-height: 2em;
+	}
+	.ham-title>h1{
+		color:white;
+		font-size:1em;
+		margin:0;
+	}
+	.ham-subtitle{
+		position:relative;
+		float: left;
+		
+		margin:0;
+		font-size:10px;
+		font-style: italic;
+		color:white;
+		
+	}
+	
+	.ham-menu>li{
+		
+		
+		flex-direction: column;
+	}
+	.ham-menu>li>a{
+		width: 100%;
+		position: relative;
+		padding: .75em 2em;
+		text-decoration: none;
+		color: white;
+		cursor: pointer;
+		font-size: 15px;
+		background-color: transparent;
+
+	}
+	.ham-menu>li>a:hover {
+	    text-decoration: underline;
+	    
+    }
+	.nav-web-bar{
+		display: none;
+	}
+	
+
 }
